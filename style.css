@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  margin: 2rem;
+}
+
+/* buttons */
+.buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 10px;
+}
+.buttons > button {
+  background: coral;
+  border: none;
+  padding: 10px 15px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+/* Grid */
+.grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+.grid > .grid-item {
+  height: 200px;
+  width: 100%;
+  background: darkviolet;
+}
+
+/* transtion */
+.grid-column {
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+.grid-row {
+  grid-auto-rows: 15rem;
+}
+.grid-gap {
+  grid-gap: 50px;
+}
